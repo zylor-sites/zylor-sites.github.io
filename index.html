@@ -8,18 +8,12 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         html { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
         body { background-color: #090710; color: #f3f0ff; line-height: 1.65; overflow-x: hidden; }
-        a, button { text-decoration: none; color: inherit; cursor: pointer; font-family: inherit; }
-
+        a { text-decoration: none; color: inherit; cursor: pointer; }
         .container { max-width: 980px; margin: 0 auto; padding: 0 24px; }
-
-        @keyframes fadeUp {
-            0% { opacity: 0; transform: translateY(24px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
+        @keyframes fadeUp { 0% { opacity: 0; transform: translateY(24px); } 100% { opacity: 1; transform: translateY(0); } }
         .anim-1 { animation: fadeUp 0.85s ease-out forwards; }
         .anim-2 { opacity: 0; animation: fadeUp 0.85s ease-out 0.15s forwards; }
         .anim-3 { opacity: 0; animation: fadeUp 0.85s ease-out 0.3s forwards; }
-
         header { position: sticky; top: 0; z-index: 50; background: rgba(9, 7, 16, 0.88); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(139, 92, 246, 0.14); }
         .nav { display: flex; justify-content: space-between; align-items: center; height: 72px; }
         .brand { font-size: 20px; font-weight: 800; letter-spacing: 1.5px; color: #ffffff; }
@@ -28,7 +22,6 @@
         .menu a:hover { color: #ffffff; transition: 0.25s; }
         .btn-nav { background: rgba(139, 92, 246, 0.16); border: 1px solid rgba(139, 92, 246, 0.35); color: #ddd6fe; font-weight: 600; padding: 9px 18px; border-radius: 10px; font-size: 13px; transition: 0.25s; }
         .btn-nav:hover { background: #7c3aed; color: #ffffff; border-color: #7c3aed; }
-
         .hero { padding: 110px 24px 95px; text-align: center; background: radial-gradient(circle at 50% 0%, rgba(109, 40, 217, 0.24) 0%, rgba(9, 7, 16, 0) 68%); }
         .status { display: inline-flex; align-items: center; gap: 8px; background: rgba(167, 139, 250, 0.08); color: #c4b5fd; font-size: 13px; font-weight: 500; padding: 6px 16px; border-radius: 999px; border: 1px solid rgba(167, 139, 250, 0.2); margin-bottom: 26px; }
         .dot { width: 7px; height: 7px; background: #a78bfa; border-radius: 50%; box-shadow: 0 0 10px #a78bfa; }
@@ -36,17 +29,13 @@
         .hero h1 span { background: linear-gradient(90deg, #c084fc, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .hero p { color: #9f98b8; font-size: 18px; max-width: 580px; margin: 0 auto 38px; font-weight: 400; }
         .hero-actions { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
-        
-        .btn-main { background: #7c3aed; color: #ffffff; font-weight: 600; padding: 15px 32px; border-radius: 12px; font-size: 15px; transition: 0.25s; display: inline-block; border: none; box-shadow: 0 8px 24px rgba(124, 58, 237, 0.32); }
+        .btn-main { background: #7c3aed; color: #ffffff; font-weight: 600; padding: 15px 32px; border-radius: 12px; font-size: 15px; transition: 0.25s; display: inline-block; box-shadow: 0 8px 24px rgba(124, 58, 237, 0.32); }
         .btn-main:hover { background: #8b5cf6; transform: translateY(-2px); box-shadow: 0 12px 28px rgba(139, 92, 246, 0.45); }
-        
         .btn-soft { background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.1); padding: 15px 32px; border-radius: 12px; font-weight: 600; color: #e2ddf5; font-size: 15px; transition: 0.25s; display: inline-block; }
         .btn-soft:hover { border-color: rgba(167, 139, 250, 0.45); background: rgba(167, 139, 250, 0.08); }
-
         .section { padding: 80px 0; }
         .section-title { font-size: 30px; font-weight: 700; text-align: center; margin-bottom: 10px; letter-spacing: -0.3px; }
         .section-sub { text-align: center; color: #8c85a6; font-size: 15px; margin-bottom: 48px; }
-
         .case-card { background: #110e1c; border: 1px solid rgba(139, 92, 246, 0.16); border-radius: 24px; overflow: hidden; display: grid; grid-template-columns: 1fr 1.05fr; transition: 0.3s; }
         .case-card:hover { border-color: rgba(167, 139, 250, 0.4); box-shadow: 0 20px 50px rgba(76, 29, 149, 0.18); }
         .case-preview { background: linear-gradient(145deg, #161224 0%, #0d0a16 100%); padding: 38px; display: flex; flex-direction: column; justify-content: center; border-right: 1px solid rgba(139, 92, 246, 0.12); }
@@ -56,7 +45,6 @@
         .mock-title { font-size: 19px; font-weight: 800; color: #fbbf24; margin-bottom: 8px; }
         .mock-desc { font-size: 13px; color: #a1a1aa; margin-bottom: 18px; line-height: 1.5; }
         .mock-btn { display: inline-block; background: #f59e0b; color: #09090b; font-size: 12px; font-weight: 700; padding: 7px 14px; border-radius: 6px; }
-        
         .case-info { padding: 38px; display: flex; flex-direction: column; justify-content: space-between; }
         .tag { display: inline-block; background: rgba(139, 92, 246, 0.14); color: #c4b5fd; font-size: 12px; font-weight: 600; padding: 5px 12px; border-radius: 999px; margin-bottom: 16px; width: fit-content; }
         .case-info h3 { font-size: 24px; margin-bottom: 12px; font-weight: 700; }
@@ -64,7 +52,6 @@
         .features { list-style: none; margin-bottom: 26px; font-size: 14px; color: #d8d3eb; }
         .features li { margin-bottom: 9px; padding-left: 20px; position: relative; }
         .features li::before { content: "•"; color: #a78bfa; position: absolute; left: 0; font-size: 18px; line-height: 1.2; }
-
         .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(275px, 1fr)); gap: 22px; }
         .price-card { background: #110e1c; border: 1px solid rgba(139, 92, 246, 0.14); border-radius: 22px; padding: 30px; display: flex; flex-direction: column; justify-content: space-between; transition: 0.25s; }
         .price-card:hover { border-color: rgba(167, 139, 250, 0.35); transform: translateY(-3px); }
@@ -72,12 +59,10 @@
         .price-card h3 { font-size: 19px; font-weight: 700; }
         .price-val { font-size: 28px; font-weight: 800; color: #c4b5fd; margin: 12px 0 14px; }
         .price-card p { font-size: 14px; color: #948eb0; margin-bottom: 24px; }
-
         .steps { border-top: 1px solid rgba(139, 92, 246, 0.12); border-bottom: 1px solid rgba(139, 92, 246, 0.12); background: #0c0915; padding: 70px 0; }
         .step-num { font-size: 12px; font-weight: 700; color: #a78bfa; letter-spacing: 1.5px; margin-bottom: 8px; }
         .step-title { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
         .step-text { font-size: 14px; color: #948eb0; }
-
         .cta-box { background: linear-gradient(135deg, #4c1d95 0%, #2e1065 100%); border: 1px solid rgba(167, 139, 250, 0.25); border-radius: 26px; padding: 54px 30px; text-align: center; }
         .cta-box h2 { font-size: 30px; font-weight: 800; margin-bottom: 12px; color: #ffffff; }
         .cta-box p { color: #ddd6fe; font-size: 16px; max-width: 520px; margin: 0 auto 30px; }
@@ -86,9 +71,7 @@
         .btn-white:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
         .btn-vk { background: rgba(9, 7, 16, 0.45); border: 1px solid rgba(255, 255, 255, 0.25); color: #ffffff; font-weight: 600; padding: 15px 30px; border-radius: 12px; font-size: 15px; display: inline-block; transition: 0.25s; }
         .btn-vk:hover { background: rgba(9, 7, 16, 0.75); transform: translateY(-2px); }
-
         footer { text-align: center; padding: 34px 20px; color: #676080; font-size: 13px; }
-
         @media (max-width: 768px) {
             .case-card { grid-template-columns: 1fr; }
             .case-preview { border-right: none; border-bottom: 1px solid rgba(139, 92, 246, 0.12); }
@@ -99,7 +82,6 @@
     </style>
 </head>
 <body>
-
     <header>
         <div class="container nav">
             <a href="#top" onclick="go('top'); return false;" class="brand">ZYLOR<span>WEB</span></a>
@@ -111,7 +93,6 @@
             <a href="#contact" onclick="go('contact'); return false;" class="btn-nav">Связаться</a>
         </div>
     </header>
-
     <section id="top" class="hero">
         <div class="container">
             <div class="status anim-1"><span class="dot"></span> Свободен для новых заказов</div>
@@ -119,3 +100,115 @@
             <p class="anim-2">Помогаю частным мастерам и малому бизнесу привлекать клиентов из интернета. Аккуратный дизайн, быстрая загрузка и полная адаптация под смартфоны.</p>
             <div class="hero-actions anim-3">
                 <a href="#cases" onclick="go('cases'); return false;" class="btn-main">Смотреть портфолио</a>
+                <a href="#contact" onclick="go('contact'); return false;" class="btn-soft">Обсудить задачу</a>
+            </div>
+        </div>
+    </section>
+    <section id="cases" class="section">
+        <div class="container">
+            <h2 class="section-title">Выполненные проекты</h2>
+            <p class="section-sub">Откройте живой сайт, чтобы протестировать его работу в браузере или с телефона</p>
+            <div class="case-card">
+                <div class="case-preview">
+                    <div class="mock-browser">
+                        <div class="mock-dots"><span></span><span></span><span></span></div>
+                        <div class="mock-title">БЛЕСК АВТО — Детейлинг</div>
+                        <div class="mock-desc">Полировка кузова, керамика 9H и химчистка салона с гарантией до 3 лет. Прайс-лист и запись на осмотр.</div>
+                        <span class="mock-btn">Рассчитать стоимость</span>
+                    </div>
+                </div>
+                <div class="case-info">
+                    <div>
+                        <span class="tag">Автобизнес • Лендинг</span>
+                        <h3>Студия детейлинга «БлескАвто»</h3>
+                        <p>Одностраничный сайт для автостудии с акцентом на премиум-услуги и быструю запись клиента со смартфона.</p>
+                        <ul class="features">
+                            <li>Чистый код без тяжелых конструкторов — загрузка за 0.5 сек</li>
+                            <li>Идеальное отображение на любых экранах и телефонах</li>
+                            <li>Удобный прайс-лист и понятная форма заявки</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="https://github.io" target="_blank" rel="noopener noreferrer" class="btn-main" style="width: 100%; text-align: center;">Открыть живой сайт ↗</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="prices" class="section" style="padding-top: 10px;">
+        <div class="container">
+            <h2 class="section-title">Услуги и стоимость</h2>
+            <p class="section-sub">Честные цены без скрытых доплат. Оплата только после демонстрации готового макета</p>
+            <div class="grid-3">
+                <div class="price-card">
+                    <div>
+                        <h3>Сайт-визитка</h3>
+                        <div class="price-val">от 1 500 ₽</div>
+                        <p>Подойдет для репетиторов, мастеров красоты, фотографов и специалистов. О вас, услуги, цены и кнопки связи.</p>
+                    </div>
+                    <a href="#contact" onclick="go('contact'); return false;" class="btn-soft" style="text-align: center; padding: 12px;">Заказать визитку</a>
+                </div>
+                <div class="price-card accent">
+                    <div>
+                        <h3>Продающий лендинг</h3>
+                        <div class="price-val">от 2 500 ₽</div>
+                        <p>Полноценный одностраничный сайт для бизнеса (автосервис, ремонт, салон). Преимущества, прайс-лист и форма записи.</p>
+                    </div>
+                    <a href="#contact" onclick="go('contact'); return false;" class="btn-main" style="text-align: center; padding: 12px;">Заказать лендинг</a>
+                </div>
+                <div class="price-card">
+                    <div>
+                        <h3>Доработка и запуск</h3>
+                        <div class="price-val">от 800 ₽</div>
+                        <p>Обновление текстов и цен на готовом сайте, адаптация под телефон и размещение на бесплатном хостинге.</p>
+                    </div>
+                    <a href="#contact" onclick="go('contact'); return false;" class="btn-soft" style="text-align: center; padding: 12px;">Обсудить задачу</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="process" class="steps">
+        <div class="container grid-3">
+            <div>
+                <div class="step-num">01 / ЗАДАЧА</div>
+                <div class="step-title">Короткий созвон или чат</div>
+                <div class="step-text">Вы рассказываете об услугах и пожеланиях по цветам. Согласуем структуру за 15 минут.</div>
+            </div>
+            <div>
+                <div class="step-num">02 / СБОРКА</div>
+                <div class="step-title">Создание и показ макета</div>
+                <div class="step-text">За 1–2 дня собираю рабочий сайт и присылаю тестовую ссылку. Вносим нужные правки.</div>
+            </div>
+            <div>
+                <div class="step-num">03 / ЗАПУСК</div>
+                <div class="step-title">Оплата и передача</div>
+                <div class="step-text">После утверждения вы оплачиваете работу, и я запускаю сайт в интернете под ключ.</div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Обсудим ваш будущий сайт?</h2>
+                <p>Напишите мне в Telegram или ВКонтакте — отвечу за 15 минут, помогу с текстом и бесплатно покажу первый вариант.</p>
+                <div class="cta-btns">
+                    <a href="https://t.me" target="_blank" rel="noopener noreferrer" class="btn-white">Написать в Telegram</a>
+                    <a href="https://vk.ru" target="_blank" rel="noopener noreferrer" class="btn-vk">Написать ВКонтакте</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        © 2026 Zylor Web — Разработка сайтов под ключ
+    </footer>
+    <script>
+        function go(id) {
+            var el = document.getElementById(id);
+            if (el) {
+                var topPos = el.getBoundingClientRect().top + window.pageYOffset - 70;
+                window.scrollTo({ top: topPos, behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>
